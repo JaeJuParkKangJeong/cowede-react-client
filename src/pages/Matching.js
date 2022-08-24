@@ -8,7 +8,8 @@ const Matching = () => {
     setLevel(e.target.value);
   };
   const onClickMatch = () => {
-    window.open("http://localhost:3000/editor", "_blank");
+    let url = "http://localhost:3000/editor" + "?level=" + level;
+    window.open(url, "_blank");
   };
   return (
     <div>
